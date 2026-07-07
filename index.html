@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dinesh | Full Stack Developer</title>
+  <meta name="description" content="Dinesh - MCA Student, Full Stack Developer specializing in MERN Stack. Building modern web applications." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700;14..32,800;14..32,900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <!-- LOADING -->
+  <div id="loading">
+    <div class="loader-ring"></div>
+    <div class="loader-text">Loading...</div>
+  </div>
+
+  <!-- SCROLL TOP -->
+  <button id="scrollTopBtn" aria-label="Scroll to top">
+    <i class="fas fa-arrow-up"></i>
+  </button>
+
+  <!-- NAVBAR -->
+  <nav id="navbar">
+    <div class="container nav-container">
+      <a href="#home" class="logo">DINU</a>
+      <ul class="nav-menu" id="navMenu">
+        <li><a href="#home" class="nav-link active">Home</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#education" class="nav-link">Education</a></li>
+        <li><a href="#certificates" class="nav-link">Certificates</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+        <li>
+          <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+            <i class="fas fa-moon"></i>
+          </button>
+        </li>
+      </ul>
+      <div class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section id="home" class="hero">
+    <div class="hero-bg-shapes">
+      <div class="shape shape-1"></div>
+      <div class="shape shape-2"></div>
+      <div class="shape shape-3"></div>
+      <div class="shape shape-4"></div>
+    </div>
+    <div class="container hero-container">
+      <div class="hero-image">
+        <div class="profile-img-wrapper">
+          <img src="assets/photo.png" alt="Dinesh - Full Stack Developer" onerror="this.style.display='none'; document.getElementById('profilePlaceholder').style.display='flex';" />
+          <div id="profilePlaceholder" class="profile-placeholder">
+            <i class="fas fa-user"></i>
+          </div>
+        </div>
+      </div>
+      <div class="hero-content">
+        <p class="hero-greeting">Hello, I'm</p>
+        <h1 class="hero-name">Dinesh</h1>
+        <div class="hero-typing">
+          <span class="typing-text"></span>
+          <span class="typing-cursor">|</span>
+        </div>
+        <p class="hero-description">
+          I build modern, responsive, and user-friendly web applications using the MERN Stack and create attractive UI designs.
+        </p>
+        <div class="hero-buttons">
+          <a href="assets/Resume.pdf" download class="btn btn-primary">
+            <i class="fas fa-download"></i> Download Resume
+          </a>
+          <a href="#projects" class="btn btn-outline">View Projects</a>
+        </div>
+        <div class="hero-socials">
+          <a href="https://github.com/MASS-DINESH" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+          <a href="https://www.linkedin.com/in/dinesh-m-807b62377" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+          <a href="mailto:dinesh267dps@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="about section">
+    <div class="container">
+      <h2 class="section-title reveal">About Me</h2>
+      <p class="section-subtitle reveal">Get to know me better</p>
+      <div class="about-content">
+        <div class="about-text">
+          <p>Hi, I'm <strong>Dinesh</strong>, a passionate <strong>Master of Computer Applications (MCA)</strong> student with a strong interest in <strong>Full Stack Web Development</strong>. 
+            I specialize in the <strong>MERN Stack (MongoDB, Express.js, React.js, and Node.js)</strong> and enjoy building secure, scalable, 
+            and user-friendly web applications that solve real-world problems.
+          </p>
+          <p>I am committed to writing clean, efficient, and maintainable code while continuously improving my technical expertise. 
+            I enjoy learning new technologies, exploring modern development practices, and transforming innovative ideas into practical software solutions.
+          </p>
+          <p>My goal is to begin my career in a forward-thinking organization where I can contribute to impactful projects, collaborate with talented professionals, and continue growing as a full stack developer. 
+            I am always eager to embrace new challenges, expand my knowledge, and deliver high-quality solutions that create value.</p>
+        </div>
+        <div class="about-stats">
+          <div class="stat-card">
+            <div class="stat-number" data-target="6">0</div>
+            <div class="stat-label">Projects Completed</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-number" data-target="15">0</div>
+            <div class="stat-label">Technologies Learned</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-number" data-target="8">0</div>
+            <div class="stat-label">Certificates Earned</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills" class="skills section">
+    <div class="container">
+      <h2 class="section-title reveal">My Skills</h2>
+      <p class="section-subtitle reveal">Technologies I work with</p>
+      <div class="skills-grid">
+        <div class="skill-category reveal reveal-delay-1">
+          <div class="skill-category-header"><i class="fas fa-code"></i><h3>Frontend</h3></div>
+          <div class="skill-items">
+            <span class="skill-item"><i class="fab fa-html5" style="color:#E44D26"></i> HTML5</span>
+            <span class="skill-item"><i class="fab fa-css3-alt" style="color:#1572B6"></i> CSS3</span>
+            <span class="skill-item"><i class="fab fa-js" style="color:#F7DF1E"></i> JavaScript</span>
+            <span class="skill-item"><i class="fab fa-bootstrap" style="color:#7952B3"></i> Bootstrap</span>
+            <span class="skill-item"><i class="fab fa-react" style="color:#61DAFB"></i> React.js</span>
+          </div>
+        </div>
+        <div class="skill-category reveal reveal-delay-2">
+          <div class="skill-category-header"><i class="fas fa-server"></i><h3>Backend</h3></div>
+          <div class="skill-items">
+            <span class="skill-item"><i class="fab fa-node-js" style="color:#339933"></i> Node.js</span>
+            <span class="skill-item"><i class="fas fa-code" style="color:#68A063"></i> Express.js</span>
+          </div>
+        </div>
+        <div class="skill-category reveal reveal-delay-3">
+          <div class="skill-category-header"><i class="fas fa-database"></i><h3>Database</h3></div>
+          <div class="skill-items">
+            <span class="skill-item"><i class="fas fa-database" style="color:#47A248"></i> MongoDB</span>
+            <span class="skill-item"><i class="fas fa-database" style="color:#00758F"></i> MySQL</span>
+          </div>
+        </div>
+        <div class="skill-category reveal reveal-delay-4">
+          <div class="skill-category-header"><i class="fas fa-terminal"></i><h3>Languages</h3></div>
+          <div class="skill-items">
+            <span class="skill-item"><i class="fab fa-python" style="color:#3776AB"></i> Python</span>
+            <span class="skill-item"><i class="fab fa-java" style="color:#ED8B00"></i> Java</span>
+            <span class="skill-item"><i class="fas fa-code" style="color:#555"></i> C</span>
+          </div>
+        </div>
+        <div class="skill-category reveal reveal-delay-5">
+          <div class="skill-category-header"><i class="fas fa-tools"></i><h3>Tools</h3></div>
+          <div class="skill-items">
+            <span class="skill-item"><i class="fab fa-git-alt" style="color:#F05032"></i> Git</span>
+            <span class="skill-item"><i class="fab fa-github" style="color:#333"></i> GitHub</span>
+            <span class="skill-item"><i class="fas fa-code" style="color:#007ACC"></i> VS Code</span>
+            <span class="skill-item"><i class="fab fa-figma" style="color:#F24E1E"></i> Figma</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects" class="projects section">
+    <div class="container">
+      <h2 class="section-title reveal">My Projects</h2>
+      <p class="section-subtitle reveal">What I have built</p>
+      <div class="projects-grid">
+        
+        <!-- Project 1: Symposium Management System -->
+        <div class="project-card reveal reveal-delay-1">
+          <div class="project-img">
+            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='210'%3E%3Crect fill='%232563EB' width='400' height='210'/%3E%3Ctext x='200' y='115' text-anchor='middle' fill='white' font-size='20' font-family='Inter'%3ESymposium Management%3C/text%3E%3C/svg%3E" alt="Symposium Management System" />
+          </div>
+          <div class="project-info">
+            <h3>Symposium Management System</h3>
+            <p>Complete MERN Stack platform for managing symposium events, registrations, schedules, and participant tracking with real-time updates.</p>
+            <div class="project-tech"><span>React</span><span>Node.js</span><span>Express</span><span>MongoDB</span></div>
+            <div class="project-links">
+              <a href="https://github.com/MASS-DINESH" target="_blank" class="btn btn-primary project-link"><i class="fas fa-external-link-alt"></i> Demo</a>
+              <a href="https://github.com/MASS-DINESH" target="_blank" class="btn btn-outline project-link"><i class="fab fa-github"></i> GitHub</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 2: Campus Interview Managing System -->
+        <div class="project-card reveal reveal-delay-2">
+          <div class="project-img">
+            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='210'%3E%3Crect fill='%2306B6D4' width='400' height='210'/%3E%3Ctext x='200' y='115' text-anchor='middle' fill='white' font-size='20' font-family='Inter'%3ECampus Interview%3C/text%3E%3C/svg%3E" alt="Campus Interview Managing System" />
+          </div>
+          <div class="project-info">
+            <h3>Campus Interview Managing System</h3>
+            <p>Web application using HTML, CSS, JavaScript, and Python to manage campus recruitment drives, student applications, and interview scheduling.</p>
+            <div class="project-tech"><span>HTML</span><span>CSS</span><span>JavaScript</span><span>Python</span></div>
+            <div class="project-links">
+              <a href="https://github.com/MASS-DINESH" target="_blank" class="btn btn-primary project-link"><i class="fas fa-external-link-alt"></i> Demo</a>
+              <a href="https://github.com/MASS-DINESH" target="_blank" class="btn btn-outline project-link"><i class="fab fa-github"></i> GitHub</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 3: University Auto Seat Allotment -->
+        <div class="project-card reveal reveal-delay-3">
+          <div class="project-img">
+            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='210'%3E%3Crect fill='%238B5CF6' width='400' height='210'/%3E%3Ctext x='200' y='115' text-anchor='middle' fill='white' font-size='20' font-family='Inter'%3ESeat Allotment%3C/text%3E%3C/svg%3E" alt="University Auto Seat Allotment" />
+          </div>
+          <div class="project-info">
+            <h3>University Auto Seat Allotment</h3>
+            <p>MERN Stack application that automates seat allocation for university admissions based on merit, preferences, and availability with admin dashboard.</p>
+            <div class="project-tech"><span>React</span><span>Node.js</span><span>Express</span><span>MongoDB</span></div>
+            <div class="project-links">
+              <a href="https://github.com/MASS-DINESH" target="_blank" class="btn btn-primary project-link"><i class="fas fa-external-link-alt"></i> Demo</a>
+              <a href="https://github.com/MASS-DINESH" target="_blank" class="btn btn-outline project-link"><i class="fab fa-github"></i> GitHub</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 4: Learning Management System -->
+        <div class="project-card reveal reveal-delay-4">
+          <div class="project-img">
+            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='210'%3E%3Crect fill='%23F59E0B' width='400' height='210'/%3E%3Ctext x='200' y='115' text-anchor='middle' fill='white' font-size='20' font-family='Inter'%3ELMS%3C/text%3E%3C/svg%3E" alt="Learning Management System" />
+          </div>
+          <div class="project-info">
+            <h3>Learning Management System</h3>
+            <p>Interactive platform built with HTML, CSS, and JavaScript for online courses, video lectures, assignments, quizzes, and student progress tracking.</p>
+            <div class="project-tech"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+            <div class="project-links">
+              <a href="https://github.com/MASS-DINESH" target="_blank" class="btn btn-primary project-link"><i class="fas fa-external-link-alt"></i> Demo</a>
+              <a href="https://github.com/MASS-DINESH" target="_blank" class="btn btn-outline project-link"><i class="fab fa-github"></i> GitHub</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 5: Voice Assistant -->
+        <div class="project-card reveal reveal-delay-5">
+          <div class="project-img">
+            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='210'%3E%3Crect fill='%23EF4444' width='400' height='210'/%3E%3Ctext x='200' y='115' text-anchor='middle' fill='white' font-size='20' font-family='Inter'%3EVoice Assistant%3C/text%3E%3C/svg%3E" alt="Voice Assistant" />
+          </div>
+          <div class="project-info">
+            <h3>Voice Assistant</h3>
+            <p>Python-based voice assistant capable of speech recognition, text-to-speech conversion, answering queries, and performing automation tasks.</p>
+            <div class="project-tech"><span>Python</span><span>Speech Recognition</span><span>NLP</span></div>
+            <div class="project-links">
+              <a href="https://github.com/MASS-DINESH" target="_blank" class="btn btn-primary project-link"><i class="fas fa-external-link-alt"></i> Demo</a>
+              <a href="https://github.com/MASS-DINESH" target="_blank" class="btn btn-outline project-link"><i class="fab fa-github"></i> GitHub</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 6: E-Commerce Website -->
+        <div class="project-card reveal reveal-delay-6">
+          <div class="project-img">
+            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='210'%3E%3Crect fill='%2310B981' width='400' height='210'/%3E%3Ctext x='200' y='115' text-anchor='middle' fill='white' font-size='20' font-family='Inter'%3EE-Commerce%3C/text%3E%3C/svg%3E" alt="E-Commerce Website" />
+          </div>
+          <div class="project-info">
+            <h3>E-Commerce Website</h3>
+            <p>Full-featured MERN Stack e-commerce platform with product catalog, shopping cart, user authentication, payment integration, and order management.</p>
+            <div class="project-tech"><span>React</span><span>Node.js</span><span>Express</span><span>MongoDB</span></div>
+            <div class="project-links">
+              <a href="https://github.com/MASS-DINESH" target="_blank" class="btn btn-primary project-link"><i class="fas fa-external-link-alt"></i> Demo</a>
+              <a href="https://github.com/MASS-DINESH" target="_blank" class="btn btn-outline project-link"><i class="fab fa-github"></i> GitHub</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- EDUCATION -->
+  <section id="education" class="education section">
+    <div class="container">
+      <h2 class="section-title reveal">Education</h2>
+      <p class="section-subtitle reveal">My academic journey</p>
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-date">2025 – 2027</div>
+          <div class="timeline-content"><h3>MCA – Master of Computer Applications</h3><p>Pursuing advanced computing, web technologies, and software development.</p></div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-date">2022 – 2025</div>
+          <div class="timeline-content"><h3>BCA – Bachelor of Computer Applications</h3><p>Foundation in programming, database management, and web development.</p></div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-date">2020 – 2022</div>
+          <div class="timeline-content"><h3>Higher Secondary Education</h3><p>Focused on Computer application and Commerce.</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CERTIFICATES -->
+  <section id="certificates" class="certificates section">
+    <div class="container">
+      <h2 class="section-title reveal">Certificates</h2>
+      <p class="section-subtitle reveal">My achievements & certifications</p>
+      <div class="certificates-grid">
+        <div class="cert-card"><div class="cert-icon"><i class="fab fa-python"></i></div><h3>Python Programming</h3><p>Data structures, OOP, and application development.</p></div>
+        <div class="cert-card"><div class="cert-icon"><i class="fab fa-java"></i></div><h3>Java Programming</h3><p>Core concepts, advanced features, and app building.</p></div>
+        <div class="cert-card"><div class="cert-icon"><i class="fas fa-laptop-code"></i></div><h3>Web Development</h3><p>Full Stack with HTML, CSS, JavaScript, and frameworks.</p></div>
+        <div class="cert-card"><div class="cert-icon"><i class="fas fa-layer-group"></i></div><h3>MERN Stack</h3><p>MongoDB, Express.js, React, and Node.js.</p></div>
+        <div class="cert-card"><div class="cert-icon"><i class="fas fa-database"></i></div><h3>Database Management</h3><p>MongoDB, and data modeling.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- RESUME -->
+  <section id="resume" class="resume section">
+    <div class="container">
+      <h2 class="section-title reveal">Resume</h2>
+      <p class="section-subtitle reveal">Download or view my resume</p>
+      <div class="resume-card reveal">
+        <div class="resume-icon"><i class="fas fa-file-alt"></i></div>
+        <h3>Dinesh</h3>
+        <p>MCA Student | Full Stack Developer | MERN Stack Developer</p>
+        <div class="resume-buttons">
+          <a href="assets/Resume.pdf" download class="btn btn-primary"><i class="fas fa-download"></i> Download</a>
+          <a href="assets/Resume.pdf" target="_blank" class="btn btn-outline"><i class="fas fa-eye"></i> View</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="contact section">
+    <div class="container">
+      <h2 class="section-title reveal">Contact Me</h2>
+      <p class="section-subtitle reveal">Get in touch with me</p>
+      <div class="contact-content">
+        <div class="contact-info">
+          <div class="contact-item reveal reveal-delay-1">
+            <div class="contact-icon"><i class="fas fa-phone-alt"></i></div>
+            <div>
+              <h4>Phone</h4>
+              <p><a href="tel:+918098932041" style="color: inherit; text-decoration: none;">+91 80989 32041</a></p>
+            </div>
+          </div>
+          <div class="contact-item reveal reveal-delay-2">
+            <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+            <div>
+              <h4>Email</h4>
+              <p><a href="mailto:dinesh267dps@gmail.com" style="color: inherit; text-decoration: none;">dinesh267dps@gmail.com</a></p>
+            </div>
+          </div>
+          <div class="contact-item reveal reveal-delay-3">
+            <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
+            <div>
+              <h4>Location</h4>
+              <p>Tamil Nadu, India</p>
+            </div>
+          </div>
+          <div class="contact-item reveal reveal-delay-4">
+            <div class="contact-icon"><i class="fab fa-linkedin-in"></i></div>
+            <div>
+              <h4>LinkedIn</h4>
+              <p><a href="https://www.linkedin.com/in/dinesh-m-807b62377" target="_blank" style="color: inherit; text-decoration: none;">linkedin.com/in/dinesh-m-807b62377</a></p>
+            </div>
+          </div>
+          <div class="contact-item reveal reveal-delay-5">
+            <div class="contact-icon"><i class="fab fa-github"></i></div>
+            <div>
+              <h4>GitHub</h4>
+              <p><a href="https://github.com/MASS-DINESH" target="_blank" style="color: inherit; text-decoration: none;">github.com/MASS-DINESH</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-section">
+          <div class="footer-logo">Dinesh</div>
+          <p>MCA Student & Full Stack Developer passionate about building modern web applications.</p>
+        </div>
+        <div class="footer-section">
+          <h4>Follow Me</h4>
+          <div class="footer-socials">
+            <a href="https://github.com/MASS-DINESH" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/dinesh-m-807b62377" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            <a href="mailto:dinesh267dps@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Dinesh. All rights reserved. &nbsp; Made with <i class="fas fa-heart"></i></p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
