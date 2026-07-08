@@ -32,7 +32,7 @@
     });
 
     // ----- TYPING EFFECT -----
-    const strings = ['MCA Student', 'Full Stack Developer', 'MERN Stack Developer', 'UI Designer'];
+    const strings = ['MCA Student', 'Full Stack Developer', 'MERN Stack Developer'];
     let strIdx = 0,
         charIdx = 0,
         isDeleting = false;
