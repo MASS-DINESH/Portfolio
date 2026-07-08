@@ -188,7 +188,7 @@
         });
     });
 
-    // ----- FORCE PROJECT LINKS TO WORK (Fallback) -----
+    // ----- FORCE PROJECT LINKS TO WORK -----
     document.querySelectorAll('.project-link').forEach(link => {
         link.addEventListener('click', function(e) {
             const url = this.getAttribute('href');
@@ -198,8 +198,4 @@
             }
         });
     });
-
-    console.log('Portfolio loaded successfully!');
-    console.log('All project links point to: https://github.com/MASS-DINESH');
-
 })();
