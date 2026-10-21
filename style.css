@@ -946,6 +946,26 @@ img {
     position: relative;
 }
 
+.project-badge {
+    position: absolute;
+    top: 14px;
+    right: 14px;
+    z-index: 5;
+    background: var(--gradient);
+    color: #fff;
+    font-size: 11px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+    padding: 5px 12px;
+    border-radius: 20px;
+    box-shadow: 0 4px 15px rgba(37, 99, 235, 0.4);
+    backdrop-filter: blur(4px);
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+}
+
 .project-card::before {
     content: '';
     position: absolute;
@@ -996,6 +1016,15 @@ img {
 
 .project-card:hover .project-img img {
     transform: scale(1.12);
+}
+
+.project-img.contain-fit {
+    background: #ffffff;
+}
+
+.project-img.contain-fit img {
+    object-fit: contain;
+    padding: 18px;
 }
 
 .project-info {
